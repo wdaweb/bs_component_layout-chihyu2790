@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    .section-card {
+      padding: 20px 0;
+    }
+
+    .input-form {
+      padding: 20px 0;
+    }
+
+    .word-card {
+      padding: 20px 0;
+    }
+
+    @media (min-width: 768px) {
+      .section-card {
+        padding: 150px 0;
+      }
+
+      .input-form {
+        padding: 100px 0;
+      }
+
+      .word-card {
+        padding: 150px 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">菜單餐點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">周邊景點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">莊園位置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">咖啡故事</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="section-carousel">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col pe-0 ps-0">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1920/1080/?random=5" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/1920/1080/?random=10" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-carousel---start-------------------------------------------------------------- -->
+  <!-- section-card---start-------------------------------------------------------------- -->
+
+  <section class="section-card ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <img src="https://picsum.photos/600/400/?random=10" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <img src="https://picsum.photos/600/400/?random=10" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <img src="https://picsum.photos/600/400/?random=10" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-card---end-------------------------------------------------------------- -->
+  <!-- section-half---start-------------------------------------------------------------- -->
+
+  <section class="section-half">
+    <div class="card w-100 border-0 bg-secondary">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <!-- 切記 -->
+          <!-- 先使用w-100 讓比例先縮到比容器小，再用h-100加上object-fit:cover符合容器大小 -->
+          <!-- 如果比例的高過高那就沒辦法 -->
+          <img src="https://picsum.photos/2500/1500/?random=10" class="h-100 w-100" style="object-fit:cover;">
+        </div>
+        <div class="word-card col-lg-6 ">
+          <div class="card-body pt-5 pb-5 text-center">
+            <h5 class="card-title fs-1 mb-4">Coffee Shop</h5>
+            <p class="card-text fs-5 mb-5">
+              加強付出學生條例雙方失去人們相同使用分為請教快速，來說廠商廠商崗位物品才會一套至少懷疑態度某個靈活大力，電源擴大，典型走到早已東方故意極大及其面前，東方我要完善筆者轎車公里一下網咖編號日月潭，欄目指出並在人力商品自由裝備，翻譯上市先進性生意不少是否編輯可見分別，點點造型時代此外強大更多，穿著均為皇帝，沒事進來我看回應收費，中港路在這行動以下就會結束，此刻教育活動書記不但下載次數，那是此刻，先進教。
+            </p>
+            <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+          </div>
+        </div>
+        <div class="word-card col-lg-6 order-lg-0 order-2">
+          <div class="card-body pt-5 pb-5 text-center">
+            <h5 class="card-title fs-1 mb-4">Coffee Shop</h5>
+            <p class="card-text fs-5 mb-5">
+              加強付出學生條例雙方失去人們相同使用分為請教快速，來說廠商廠商崗位物品才會一套至少懷疑態度某個靈活大力，電源擴大，典型走到早已東方故意極大及其面前，東方我要完善筆者轎車公里一下網咖編號日月潭，欄目指出並在人力商品自由裝備，翻譯上市先進性生意不少是否編輯可見分別，點點造型時代此外強大更多，穿著均為皇帝，沒事進來我看回應收費，中港路在這行動以下就會結束，此刻教育活動書記不但下載次數，那是此刻，先進教。
+            </p>
+            <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- 切記 -->
+          <!-- 先使用w-100 讓比例先縮到比容器小，再用h-100加上object-fit:cover符合容器大小 -->
+          <!-- 如果比例的高過高那就沒辦法 -->
+          <img src="https://picsum.photos/2500/1500/?random=10" class="h-100 w-100" style="object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-half---end-------------------------------------------------------------- -->
+  <!-- input-form---start-------------------------------------------------------------- -->
+
+  <section class="input-form ">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form class="row g-3 pt-5 pb-5 needs-validation" novalidate>
+            <div class="contact-us text-center">
+              <h1>聯絡我們</h1>
+              <h2>泰山咖啡莊園，傳承熱情coding精神</h2>
+              <p>任何服務問題或建議，歡迎您透過克服表單告知我們，謝謝!</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="inputAddress" class="form-label">姓名</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="inputAddress" placeholder="此處輸入姓名.." required>
+                <div class="valid-feedback">
+
+                </div>
+                <div class="input-group-text">
+                  <div class="form-check me-2">
+                    <input class="form-check-input" type="radio" name="gender" id="man" value="" required>
+                    <label class="form-check-label" for="man">
+                      先生
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="woman" value="" required>
+                    <label class="form-check-label" for="woman">
+                      女士
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="inputPassword4" class="form-label">電話</label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="0912345678" required>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="inputEmail4" class="form-label">電子信箱</label>
+              <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="inputState" class="form-label">問題類型</label>
+              <select id="inputState" class="form-select" required>
+                <option value="">餐飲建議</option>
+                <option value="1">...</option>
+                <option value="2">...</option>
+                <option value="3">...</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">意見需求</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 150px"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                  訂閱泰山莊原最新資訊
+                </label>
+              </div>
+            </div>
+            <div class="col-auto m-auto mt-5">
+              <button type="submit" class="btn btn-secondary">送出</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- inpute-form---end-------------------------------------------------------------- -->
+  <!-- google-map---start-------------------------------------------------------------- -->
+
+  <section class="google-map">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col ps-0 pe-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.002890183707!2d121.5623502150063!3d25.03397598397251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da80a7ad%3A0xdfbc764cc6880ac8!2sGoogle!5e0!3m2!1szh-TW!2stw!4v1654065963804!5m2!1szh-TW!2stw"
+            width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="align-middle"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- google-map---end-------------------------------------------------------------- -->
+  <!-- footer---start-------------------------------------------------------------- -->
+
+  <footer class="bg-black">
+    <div class="container text-white">
+      <div class="row pt-5">
+        <div class="col-6 col-lg-3"><img src="https://picsum.photos/150/150/?random=10" class="rounded-circle"></div>
+        <div class="col-6 col-lg-3 d-flex flex-column">
+          <span>Address</span>
+          <span>1234 Street Name</span>
+          <span>City, AA 99999</span>
+        </div>
+        <div class="col-6 col-lg-3 d-flex flex-column">
+          <span>Links</span>
+          <span>1234 Street Name</span>
+          <span>City, AA 99999</span>
+        </div>
+        <div class="col-6 col-lg-3 d-flex flex-column">
+          <span>Contacts</span>
+          <span>Email:support@mobirise.com</span>
+          <span>Phone: +1(0) 000 0000 001</span>
+          <span>Fax: +1(0) 000 0000 002</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="copyright text-center pt-5 pb-5">&copy;Copyright 2021 KaiFu Change - All Rights Reserved</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 5.x 不再依賴 jQuery，功能以原生 js 來實作 -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+</body>
+
+</html>
